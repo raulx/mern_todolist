@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Caveat:wght@700&family=Inconsolata:wght@900&family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@400;700;900&family=Roboto:wght@400;900&family=Tilt+Prism&display=swap');
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media(max-width:968px){
+    html{
+        font-size: 56%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 52%;
+    }
+}
+@media(max-width:576px){
+    html{
+        font-size: 48%;
+    }
+    .profile-box{
+        width: 60rem;
+    }
+}
+
+@media(max-width:414px){
+    html{
+        font-size: 44%;
+    }
+    .profile-box{
+        width: 52rem;
+        font-size: 1.6rem;
+    }
+}
+@media(max-width:370px){
+    html{
+        font-size: 36%;
+    }
+}
+@media(max-width:280px){
+    html{
+        font-size: 30%;
+    }
+
+}
+@media(max-height:280px){
+    html{
+        font-size: 32%;
+    }
+   
+}
