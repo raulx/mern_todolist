@@ -8,7 +8,7 @@ export default defineConfig({
     port: "7163",
     proxy: {
       "/api": {
-        // target: "http://localhost:7000",
+        target: "http://localhost:7000",
         // target: "https://todolist-api-9i8n.onrender.com",
         // changeOrigin: true,
       },

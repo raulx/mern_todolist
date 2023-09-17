@@ -5,12 +5,13 @@ import {
   useLogInMutation,
   useRegisterUserMutation,
   useLogOutMutation,
+  useGetUserQuery,
 } from "./apis/usersApi";
 import { useAddItemMutation, useDeleteItemMutation } from "./apis/usersApi";
 import sliderSlice from "./slices/sliderSlice";
 import authSlice from "./slices/authSlice";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
-import { loggedIn, loggedOut } from "./slices/authSlice";
+import { loggedIn, loggedOut, updateList } from "./slices/authSlice";
 const store = configureStore({
   reducer: {
     slider: sliderSlice,
@@ -23,12 +24,13 @@ const store = configureStore({
 });
 
 setupListeners(store.dispatch);
-export { toggleSlider, loggedIn, loggedOut, closeSlider };
+export { toggleSlider, loggedIn, loggedOut, closeSlider, updateList };
 export {
   useLogInMutation,
   useRegisterUserMutation,
   useLogOutMutation,
   useAddItemMutation,
   useDeleteItemMutation,
+  useGetUserQuery,
 };
 export default store;
